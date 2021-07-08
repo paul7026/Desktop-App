@@ -1,0 +1,65 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  width: pxInProc(1351, 1920);
+  margin: 0 auto;
+  outline: 1px solid blue;
+}
+
+.about__box {
+  display: flex;
+  width: 100%;
+}
+
+.about__image-box_top {
+  display: flex;
+  width: pxInProc(558, 1351);
+  height: pxInProc(373, 1351);
+  margin-left: pxInProc(103, 1351);
+  margin-right: pxInProc(128, 1351);
+  margin-top: pxInProc(123, 1351);
+  position: relative;
+  z-index: 0;
+}
+
+.about__rectangle {
+  position: absolute;
+  z-index: 3;
+  background-image: url(../../img/Back1.svg);
+  width: 389px;
+  height: 482px;
+}
+
+.about__image-box_bottom {
+  width: 362px;
+  height: 408px;
+}
+.about__text-box {
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  font-weight: 500;
+  font-size: 32px;
+  color: black;
+  margin-top: pxInProc(217, 567);
+  margin-right: pxInProc(320, 567);
+  margin-bottom: pxInProc(30, 567);
+}
+.about__subtitle {
+  font-weight: 300;
+ font-size: 16px;
+ line-height: 150%;
+ color: black;
+ margin-bottom: pxInProc(35, 567);
+ margin-right: pxInProc(86, 567);
+
+}
+.about__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0063DD;
+}
