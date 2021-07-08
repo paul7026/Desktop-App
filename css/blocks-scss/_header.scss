@@ -1,0 +1,115 @@
+.header {
+  outline: 3px solid red;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 1453px;
+  background-image: url(../../img/Vector_1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+}
+.header__box {
+  max-width: 1644px;
+  width: 100%;
+  margin: 0 auto;
+  outline: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 100px;
+  width: 179px;
+  background-color: #0f7bff;
+  border-radius: 0px 0px 21.5px 21.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__logo-title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 572px;
+  width: 100%;
+}
+.header__list {
+  display: flex;
+  max-width: 355px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__item {
+  font-size: 16px;
+  font-weight: 500;
+}
+.header__link {
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header__elements {
+  max-width: 655px;
+  display: flex;
+  flex-direction: column;
+  margin: 88px auto 0 auto;
+}
+
+.header__button {
+  width: 166px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: #0063dd;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.header__buttons {
+  max-width: 362px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.header__devices {
+  width: pxInProc(804, 1920);
+  display: flex;
+  margin: 0 auto;
+  outline: 1px solid green;
+  position: absolute;
+  bottom: 0;
+}
+
+.header__phones {
+  width: 100%;
+}
