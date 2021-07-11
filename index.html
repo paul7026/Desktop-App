@@ -8,49 +8,54 @@
   <title>Best Desktop App for You</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/3bbff73353.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <!-- <header class="header">
-    <div class="header__box">
-      <div class="header__logo">
-        <p class="header__logo-title">AppSon</p>
+  <header class="header">
+      <div class="header__box">
+        <div class="header__logo">
+          <p class="header__logo-title">AppSon</p>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">features</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">pricing</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">pages</a>
+            </li>
+          </ul>
+          <button class="header__button">SIGN UP</button>
+        </nav>
       </div>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#">home</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">features</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">pricing</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">pages</a>
-          </li>
-        </ul>
-        <button class="header__button">SIGN UP</button>
-      </nav>
-    </div>
-    <div class="header__elements">
-      <h1 class="header__title">Best Desktop App for You</h1>
-      <p class="header__subtitle">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <div class="header__buttons">
-        <button class="header__button">Download</button>
-        <button class="header__button">Free Trial</button>
+      <div class="header__elements">
+        <h1 class="header__title">Best Desktop App for You</h1>
+        <p class="header__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="header__buttons">
+          <button class="header__button">Download</button>
+          <button class="header__button">Free Trial</button>
+        </div>
       </div>
-    </div>
-    <div class="header__devices">
-      <img class="header__phones" src="img/phones.png" alt="Phones">
-    </div> 
-  </header> -->
+      <div class="header__devices">
+        <img class="header__phones" src="img/phones.png" alt="Phones">
+        <button class="features__scroll">
+          <img class="features__scroll-img" src="img/ScrolDown.png" alt="Scroll">
+        </button> 
+      </div> 
+  </header>
+
   <main>
-    <!-- <section class="features">
+     <section class="features">
       <div class="features__box">
         <img class="features__icon" src="img/feature__Icon_1.svg" alt="Icon">
         <h3 class="features__title">Analysis</h3>
@@ -72,40 +77,55 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         </p>
       </div>
-    </section> -->
-    <!-- <section class="about">
-      <div class="about__box">
-        <div class="about__image-box_top">
-          <img src="img/screen1.jpg" alt="screen">
+    </section> 
+
+   <section class="about"> 
+     <div class="about__box">
+      <div class="about__image-box_top">
+        <div class="about__image-stack">
+          <div class="about__image-stack-item about__image-stack-item_bottom">
+            <img class="about__img" src="img/Back1.svg" alt="rectangle">
+          </div>
+          <div class="about__image-stack-item about__image-stack-item_top">
+            <img class="about__img" src="img/Screen1.png" alt="Image">
+          </div>
         </div>
-        <div class="about__rectangle"></div>
-        <div class="about__text-box">
-          <h2 class="about__title">Easy Messaging</h2>
-          <p class="about__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
-          </p>
-          <a class="about__link" href="#">Read More</a>
+      </div>
+      <div class="about__text-box about__text-box_top">
+        <h2 class="about__title">Easy Messaging</h2>
+        <p class="about__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+        <a class="about__link" href="#">Read More<div class="arrow__box"><img class="arrow__img" src="./img/Arrow.png" alt="arrow"></div></a>
+      </div>  
+     </div>
+     <div class="about__box">
+      <div class="about__text-box about__text-box_bottom">
+        <h2 class="about__title">Keep In Touch</h2>
+        <p class="about__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore
+          magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+        <a class="about__link" href="#">Read More<div class="arrow__box"><img class="arrow__img" src="./img/Arrow.png" alt="arrow"></div></a>
+      </div>
+      <div class="about__image-box_bottom">
+        <div class="about__image-stack">
+          <div class="about__image-stack-below about__image-stack-below_bottom">
+            <img class="about__img" src="img/Back2.svg" alt="rectangle">
+          </div>
+          <div class="about__image-stack-below about__image-stack-below_top">
+            <img class="about__img" src="img/Screen2.png" alt="Image">
+          </div>
         </div>
-      </div> -->
-    <!-- <div class="about__box">
-        <div class="about__text-box">
-          <h2 class="about__title">Keep In Touch</h2>
-          <p class="about__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua.
-          </p>
-          <a class="about__link" href="#">Read More</a>
-        </div>
-        <div class="about__image-box_bottom">
-          <img src="img/screen2.jpg" alt="screen">
-        </div>
-      </div> -->
-    <!-- </section>
+      </div>
+    </div>
+   </section>
+      
     <section class="work">
       <h2 class="work__title">How Does It Works?</h2>
       <p class="work__subtitele">
@@ -137,49 +157,171 @@
         </div>
       </div>
       </div>
-    </section> -->
+    </section> 
+
     <section class="price">
-      <div class="price__plan">
-        <h3 class="price__title">Pricing Plan</h3>
-        <p class="price__subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Lorem ipsum dolor sit amet.
-        </p>
-        <div class=" price__buttons">
-          <button class="price__button">Monthly</button>
-          <button class="price__button">Yearly</button>
+      <div class="price__block">
+        <div class="price__plan">
+          <h3 class="price__title">Pricing Plan</h3>
+          <p class="price__subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Lorem ipsum dolor sit amet.
+          </p>
+          <div class=" price__buttons">
+            <button class="price__button price__button_left">Monthly</button>
+            <button class="price__button price__button_right price__button_active">Yearly</button>
+          </div>
+        </div>
+        <div class="price__box">
+          <img class="price__icon" src="img/price__icon1.png" alt="Icon">
+          <h4 class="price__box-title">Premium</h4>
+          <div class="price__line"></div>
+          <ul class="price__list">
+            <li class="price__list-item">2gb Hosting</li>
+            <li class="price__list-item">10 Custom Domain</li>
+            <li class="price__list-item">SSD Hosting</li>
+            <li class="price__list-item">50 gb Bandwith</li>
+            <li class="price__list-item">Free Support</li>
+          </ul>
+          <p class="price__price">$<span>49.00</span></p>
+          <button class=" price__button">Try Now</button>
+        </div>
+        <div class="price__box">
+          <img class="price__icon" src="img/price__icon2.png" alt="Icon">
+          <h4 class="price__box-title">Standart</h4>
+          <div class="price__line"></div>
+          <ul class="price__list">
+            <li class="price__list-item">2gb Hosting</li>
+            <li class="price__list-item">10 Custom Domain</li>
+            <li class="price__list-item">SSD Hosting</li>
+            <li class="price__list-item">50 gb Bandwith</li>
+            <li class="price__list-item">Free Support</li>
+          </ul>
+          <p class="price__price">$<span>19.00</span></p>
+          <button class=" price__button price__button_active">Try Now</button>
         </div>
       </div>
-      <div class="price__box">
-        <img src="img/price__icon1.png" alt="Icon">
-        <h4 class="price__box-title">Premium</h4>
-        <div class="price__line"></div>
-        <ul class="price__list">
-          <li class="price__list-item">2gb Hosting</li>
-          <li class="price__list-item">10 Custom Domain</li>
-          <li class="price__list-item">SSD Hosting</li>
-          <li class="price__list-item">50 gb Bandwith</li>
-          <li class="price__list-item">Free Support</li>
-        </ul>
-        <p class="price__price">$ <span>49.00</span></p>
-        <button class=" price__button">Try Now</button>
-      </div>
-      <div class="price__box">
-        <img src="img/price__icon2.png" alt="Icon">
-        <h4 class="price__box-title"></h4>
-        <div class="price__line"></div>
-        <ul class="price__list">
-          <li class="price__list-item">2gb Hosting</li>
-          <li class="price__list-item">10 Custom Domain</li>
-          <li class="price__list-item">SSD Hosting</li>
-          <li class="price__list-item">50 gb Bandwith</li>
-          <li class="price__list-item">Free Support</li>
-        </ul>
-        <p class="price__price">$ <span>19.00</span></p>
-        <button class=" price__button">Try Now</button>
+    </section>
+
+    <section class="testimonials">
+        <img class="testimonials__image" src="img/testimonials.png" alt="Image">
+      <div class="testimonials__right-box">
+        <h2 class="testimonials__title">Trusted By More Than 55M Peoples</h2>
+        <div class="testimonials__blocks">
+          <div class="testimonials__block">
+            <h4 class="testimonials__block-title">Raisa Moni</h4>
+            <p class="testimonials__block-subtitle">Envato Customer</p>
+            <p class="testimonials__block-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+            </p>
+            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+          </div>
+          <div class="testimonials__block">
+            <h4 class="testimonials__block-title">Raisa Moni</h4>
+            <p class="testimonials__block-subtitle">Envato Customer</p>
+            <p class="testimonials__block-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+            </p>
+            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+          </div>
+          <div class="testimonials__block">
+            <h4 class="testimonials__block-title">Raisa Moni</h4>
+            <p class="testimonials__block-subtitle">Envato Customer</p>
+            <p class="testimonials__block-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+            </p>
+            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+          </div>
+          <div class="testimonials__block">
+            <h4 class="testimonials__block-title">Raisa Moni</h4>
+            <p class="testimonials__block-subtitle">Envato Customer</p>
+            <p class="testimonials__block-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+            </p>
+            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="pagination__link pagination__link_active"></div>
+          <div class="pagination__link"></div>
+          <div class="pagination__link"></div>
+          <div class="pagination__link"></div>
+        </div>
       </div>
     </section>
+
+    <section class="news">
+      <h2 class="news__title">Latest News From Us</h2>
+      <p class="news__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+      </p>
+      <div class="news__posts">
+        <div class="news__left-box">
+          <img class="news__main-img" src="img/news-main.png" alt="Image">
+          <h3 class="news__left-title">The master bedroom suite is phenomenally spacious</h3>
+          <p class="news__left-subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a class="news__link" href="#">Continue Reading<div class="arrow__box"><img class="arrow__img" src="./img/Arrow.png" alt="arrow"></div></a>
+        </div>
+        <div class="news__right-box">
+          <div class="news__block">
+            <img src="img/news-top.png" alt="Image">
+            <div class="news__text-box">
+              <h4 class="news__text-title">The master bedroom suite is phenomeny spacious</h4>
+              <p class="news__text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+          </div>
+          <div class="news__block">
+            <img src="img/news-midle.png" alt="Image">
+            <div class="news__text-box">
+              <h4 class="news__text-title">The master bedroom suite is phenomeny spacious</h4>
+              <p class="news__text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+          </div>
+          <div class="news__block">
+            <img src="img/news-bottom.png" alt="Image">
+            <div class="news__text-box">
+              <h4 class="news__text-title">The master bedroom suite is phenomeny spacious</h4>
+              <p class="news__text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trial">
+      <div class="trial__box">
+        <h3 class="trial__title">Try 30 Days Free Trial</h3>
+        <p class="trial__subtitle">No credit card reauired</p>
+      </div>
+      <button class="trial__button">Get Stared</button>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <h3 class="footer__title">AppSon</h3>
+      <div class="footer__block">
+        <input class="footer__input" type="text" placeholder="Enter Your Email">
+        <button class="footer__button">SUBSCRIBE</button>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">&commat; 2018 Copyright, All Rights Reserved by AppSon</p>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="#" class="footer__link">Terms & Condition</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+        <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+      </ul>
+      <ul class="footer__list-social">
+        <li class="footer__item-social"><a href="#" class="footer__social-link-fb"><img class="footer__social-icon" src="img/fb.svg" alt="social"></a></li>
+        <li class="footer__item-social"><a href="#" class="footer__social-link-twit"><img class="footer__social-icon" src="img/twit.svg" alt="social"></a></li>
+        <li class="footer__item-social"><a href="#" class="footer__social-link-you"><img class="footer__social-icon" src="img/Youtube.svg" alt="social"></a><li>
+      </ul>
+      <a href="#" class="footer__on-top"></a>
+    </div>
+  </footer>
 </body>
 
 </html>

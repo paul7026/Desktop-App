@@ -1,0 +1,87 @@
+.testimonials {
+  display: flex;
+  width: 100%;
+  background-color: #f5fcfd;
+  margin-bottom: pxInProc(130, 1920);
+}
+
+.testimonials__image {
+  width: pxInProc(779, 1920);
+  height: pxInProc(601, 1920);
+  margin-right: 98px;
+  outline: 1px solid red;
+}
+.testimonials__right-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.testimonials__title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: pxInProc(113, 1146);
+  margin-bottom: pxInProc(40, 1146);
+}
+.testimonials__blocks {
+  display: flex;
+  outline: 1px solid red;
+  overflow: hidden;
+  width: 1600px;
+}
+.testimonials__block {
+  box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
+  border-radius: 5px;
+  background-color: white;
+  width: 362px;
+  height: 211px;
+  position: relative;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.testimonials__block-title {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 40px 239px 10px 30px;
+}
+.testimonials__block-subtitle {
+  font-size: 14px;
+  font-weight: 400px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+.testimonials__block-text {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-left: 30px;
+  margin-bottom: 39px;
+}
+.testimonials__twit-icon {
+  color: #0f7bff;
+  font-size: 24px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 37px;
+}
+
+.pagination__link {
+  width: 12px;
+  height: 12px;
+  background-color: #f5fcfd;
+  border: 1.6px solid #0063dd;
+  border-radius: 32px;
+  margin-right: 8px;
+}
+
+.pagination__link_active {
+  width: 38.4px;
+  height: 12px;
+  background-color: #0063dd;
+}

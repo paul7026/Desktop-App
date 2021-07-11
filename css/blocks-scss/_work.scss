@@ -1,8 +1,9 @@
 .work {
   display: flex;
   flex-direction: column;
-  background-color: #F5FCFD;
+  background-color: #f5fcfd;
   align-items: center;
+  margin-top: -3%;
 }
 .work__title {
   font-weight: 400;
@@ -27,7 +28,7 @@
   width: 100%;
   margin-bottom: pxInProc(137, 1920);
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   position: relative;
 }
 .work__box {
@@ -63,7 +64,7 @@
 .work__line {
   width: 780px;
   height: 0px;
-  border: 2px dashed #0F7BFF;
+  border: 2px dashed #0f7bff;
   position: absolute;
   top: 50px;
   z-index: 0;
