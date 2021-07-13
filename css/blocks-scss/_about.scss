@@ -4,7 +4,6 @@
   max-width: 1351px;
   width: 100%;
   margin: 0 auto;
-  outline: 1px solid blue;
   margin-top: -3.5%;
   position: relative;
   z-index: 5;
@@ -62,14 +61,14 @@
 
 .about__title {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 3.2rem;
   color: black;
   margin-bottom: pxInProc(30, 567);
 }
 
 .about__subtitle {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
   color: black;
   margin-bottom: pxInProc(35, 567);
@@ -77,15 +76,29 @@
 .about__link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #0063dd;
   display: flex;
+  @include transition-prop;
+  span {
+    width: 67px;
+    color: #0063dd;
+    font-weight: 500;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
+i {
+  font-weight: 400;
+  width: 100px;
+}
 .arrow__box {
   margin-left: 15px;
   width: 67px;
 }
+
 .arrow__img {
   width: 100%;
 }
@@ -119,6 +132,10 @@
 }
 
 @media screen and (max-width: 900px) {
+  .about {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .about__box {
     flex-wrap: wrap;
     justify-content: center;

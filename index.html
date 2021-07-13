@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Desktop App for You</title>
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/3bbff73353.js" crossorigin="anonymous"></script>
@@ -14,26 +16,37 @@
 <body>
   <header class="header">
       <div class="header__box">
-        <div class="header__logo">
+        <a class="header__logo" href="#">
           <p class="header__logo-title">AppSon</p>
-        </div>
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="#">home</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">features</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">pricing</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">pages</a>
-            </li>
-          </ul>
-          <button class="header__button">SIGN UP</button>
-        </nav>
+        </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">home</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">features</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">pricing</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">pages</a>
+              </li>
+            </ul>
+            <button class="header__button">SIGN UP</button>
+            <div class="header__nav-close">
+              <span class="header__nav-close-line"></span>
+              <span class="header__nav-close-line"></span>
+            </div>
+          </nav>
+          <div class="heder__burger burger">
+            <span class="burger__line burger__line_first"></span>
+            <span class="burger__line burger__line_second"></span>
+            <span class="burger__line burger__line_third"></span>
+          </div>
+          
+        
       </div>
       <div class="header__elements">
         <h1 class="header__title">Best Desktop App for You</h1>
@@ -47,14 +60,17 @@
         </div>
       </div>
       <div class="header__devices">
-        <img class="header__phones" src="img/phones.png" alt="Phones">
-        <button class="features__scroll">
-          <img class="features__scroll-img" src="img/ScrolDown.png" alt="Scroll">
-        </button> 
+        <img class="header__phones" src="img/phones_cut.png" alt="Phones">
       </div> 
   </header>
-
+ 
   <main>
+    <div class="scroll">
+      <button class="scroll__button">
+        <img class="scroll__img" src="img/ScrolDown.png" alt="Scroll">
+      </button>
+    </div>
+
      <section class="features">
       <div class="features__box">
         <img class="features__icon" src="img/feature__Icon_1.svg" alt="Icon">
@@ -156,7 +172,6 @@
           </p>
         </div>
       </div>
-      </div>
     </section> 
 
     <section class="price">
@@ -204,50 +219,50 @@
     </section>
 
     <section class="testimonials">
+      <div class="testimonials__left-box">
         <img class="testimonials__image" src="img/testimonials.png" alt="Image">
+      </div>
       <div class="testimonials__right-box">
         <h2 class="testimonials__title">Trusted By More Than 55M Peoples</h2>
-        <div class="testimonials__blocks">
-          <div class="testimonials__block">
-            <h4 class="testimonials__block-title">Raisa Moni</h4>
-            <p class="testimonials__block-subtitle">Envato Customer</p>
-            <p class="testimonials__block-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
-            </p>
-            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
-          </div>
-          <div class="testimonials__block">
-            <h4 class="testimonials__block-title">Raisa Moni</h4>
-            <p class="testimonials__block-subtitle">Envato Customer</p>
-            <p class="testimonials__block-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
-            </p>
-            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
-          </div>
-          <div class="testimonials__block">
-            <h4 class="testimonials__block-title">Raisa Moni</h4>
-            <p class="testimonials__block-subtitle">Envato Customer</p>
-            <p class="testimonials__block-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
-            </p>
-            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
-          </div>
-          <div class="testimonials__block">
-            <h4 class="testimonials__block-title">Raisa Moni</h4>
-            <p class="testimonials__block-subtitle">Envato Customer</p>
-            <p class="testimonials__block-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
-            </p>
-            <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+        <!-- Карусель -->
+        <div class="testimonials__container">
+          <div class="owl-carousel">
+            <div>
+              <h4 class="testimonials__block-title">Raisa Moni</h4>
+              <p class="testimonials__block-subtitle">Envato Customer</p>
+              <p class="testimonials__block-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+              </p>
+              <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+            </div>
+            <div>
+              <h4 class="testimonials__block-title">Raisa Moni</h4>
+              <p class="testimonials__block-subtitle">Envato Customer</p>
+              <p class="testimonials__block-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+              </p>
+              <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+            </div>
+            <div>
+              <h4 class="testimonials__block-title">Raisa Moni</h4>
+              <p class="testimonials__block-subtitle">Envato Customer</p>
+              <p class="testimonials__block-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+              </p>
+              <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+            </div>
+            <div>
+              <h4 class="testimonials__block-title">Raisa Moni</h4>
+              <p class="testimonials__block-subtitle">Envato Customer</p>
+              <p class="testimonials__block-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore etamet.
+              </p>
+              <div class="testimonials__twit-icon"><i class="fab fa-twitter"></i></div>
+            </div>
           </div>
         </div>
-        <div class="pagination">
-          <div class="pagination__link pagination__link_active"></div>
-          <div class="pagination__link"></div>
-          <div class="pagination__link"></div>
-          <div class="pagination__link"></div>
-        </div>
-      </div>
+        <!-- Карусель -->
+      </div> 
     </section>
 
     <section class="news">
@@ -257,7 +272,9 @@
       </p>
       <div class="news__posts">
         <div class="news__left-box">
-          <img class="news__main-img" src="img/news-main.png" alt="Image">
+          <div class="news__image-main">
+            <img class="news__main-img" src="img/news-main.png" alt="Image">
+          </div>
           <h3 class="news__left-title">The master bedroom suite is phenomenally spacious</h3>
           <p class="news__left-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -266,21 +283,27 @@
         </div>
         <div class="news__right-box">
           <div class="news__block">
-            <img src="img/news-top.png" alt="Image">
+            <div class="news__block-image">
+              <img src="img/news-top.png" alt="Image">
+            </div>
             <div class="news__text-box">
               <h4 class="news__text-title">The master bedroom suite is phenomeny spacious</h4>
               <p class="news__text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             </div>
           </div>
           <div class="news__block">
-            <img src="img/news-midle.png" alt="Image">
+            <div class="news__block-image">
+              <img src="img/news-midle.png" alt="Image">
+            </div>
             <div class="news__text-box">
               <h4 class="news__text-title">The master bedroom suite is phenomeny spacious</h4>
               <p class="news__text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             </div>
           </div>
           <div class="news__block">
-            <img src="img/news-bottom.png" alt="Image">
+            <div class="news__block-image">
+              <img src="img/news-bottom.png" alt="Image">
+            </div>
             <div class="news__text-box">
               <h4 class="news__text-title">The master bedroom suite is phenomeny spacious</h4>
               <p class="news__text-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -295,7 +318,7 @@
         <h3 class="trial__title">Try 30 Days Free Trial</h3>
         <p class="trial__subtitle">No credit card reauired</p>
       </div>
-      <button class="trial__button">Get Stared</button>
+      <button class="trial__button">Get Stared <img src="img/Arrow4.svg" alt="arrow"></button>
     </section>
   </main>
 
@@ -322,6 +345,10 @@
       <a href="#" class="footer__on-top"></a>
     </div>
   </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

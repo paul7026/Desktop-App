@@ -19,13 +19,13 @@
 }
 .price__title {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 3.2rem;
   color: black;
   margin: pxInProc(161, 352) auto pxInProc(30, 352) 0;
 }
 .price__subtitle {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
   color: black;
   margin-bottom: pxInProc(40, 352);
@@ -34,7 +34,7 @@
   display: flex;
 }
 .price__button {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 20px;
   font-weight: 700;
   color: white;
@@ -46,6 +46,11 @@
   width: 166px;
   height: 50px;
   margin-bottom: pxInProc(46, 352);
+  @include transition-prop;
+  &:hover {
+    color: #0f7bff;
+    background-color: white;
+  }
 }
 
 .price__button_left {
@@ -54,11 +59,16 @@
 
 .price__button_right {
   border-radius: 0 25px 25px 0;
+  border-left: 0;
 }
 
 .price__button_active {
   background-color: #ffffff;
   color: #0063dd;
+  &:hover {
+    color: white;
+    background-color: #0f7bff;
+  }
 }
 
 .price__box {
@@ -79,7 +89,7 @@
   margin: pxInProc(39, 362) auto pxInProc(20, 362) auto;
 }
 .price__box-title {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: black;
   font-weight: 700;
   margin-bottom: pxInProc(25, 362);
@@ -96,16 +106,63 @@
 }
 .price__list-item {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 184%;
   color: black;
 }
 .price__price {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #0f7bff;
   margin-bottom: pxInProc(25, 352);
   span {
-    font-size: 32px;
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 1268px) {
+  .price {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .price__block {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .price__title {
+    margin: 0;
+  }
+  .price__subtitle {
+    margin-bottom: 30px;
+  }
+  .price__button {
+    margin-bottom: 30px;
+  }
+  .price__plan {
+    margin: 0;
+    width: 76%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .price__box {
+    margin: 15px;
+    &:last-child {
+      margin: 15px;
+    }
+  }
+  .price__plan {
+    max-width: 362px;
+    width: 100%;
+  }
+
+  .price__title {
+    text-align: center;
+  }
+  .price__subtitle {
+    text-align: center;
   }
 }

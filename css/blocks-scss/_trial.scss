@@ -11,27 +11,63 @@
   margin-right: pxInProc(154, 1920);
 }
 .trial__button {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   border-radius: 25px;
   width: 264px;
   height: 50px;
   background-color: #0f7bff;
   outline: none;
-  border: none;
+  border: 1px solid #0f7bff;
   color: white;
   margin-top: pxInProc(156, 1920);
   margin-bottom: pxInProc(129, 1920);
+  @include transition-prop;
+  img {
+    margin-left: 13px;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
 }
 .trial__title {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
   color: black;
-  margin-bottom: 25px;
+  margin-bottom: pxInProc(25, 335);
 }
 
 .trial__subtitle {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: black;
+}
+@media screen and (max-width: 768px) {
+  .trial {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trial__button {
+    width: 200px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .trial__button {
+    width: 120px;
+    height: 30px;
+  }
+  .trial__title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 379px) {
+  .trial {
+    flex-wrap: wrap;
+  }
+  .trial__button {
+    margin-top: 0;
+  }
 }
