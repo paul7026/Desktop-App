@@ -66,9 +66,11 @@
   @include transition-prop;
   &:hover {
     color: #0f7cff;
+    text-decoration: underline;
   }
   &:focus {
     color: #0f7bff;
+    text-decoration: underline;
   }
 }
 

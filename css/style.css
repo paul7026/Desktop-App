@@ -182,10 +182,12 @@ body {
 
 .header__link:hover {
   color: #0f7cff;
+  text-decoration: underline;
 }
 
 .header__link:focus {
   color: #0f7bff;
+  text-decoration: underline;
 }
 
 .header__link_active {
