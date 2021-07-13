@@ -16,13 +16,11 @@
 <body>
   <header class="header">
       <div class="header__box">
-        <a class="header__logo" href="#">
-          <p class="header__logo-title">AppSon</p>
-        </a>
+        <a class="header__logo" href="#">AppSon</a>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="#">home</a>
+                <a class="header__link header__link_active" href="#">home</a>
               </li>
               <li class="header__item">
                 <a class="header__link" href="#">features</a>
@@ -34,7 +32,7 @@
                 <a class="header__link" href="#">pages</a>
               </li>
             </ul>
-            <button class="header__button">SIGN UP</button>
+            <button class="header__button header__button_burger header__button_top">SIGN UP</button>
             <div class="header__nav-close">
               <span class="header__nav-close-line"></span>
               <span class="header__nav-close-line"></span>
@@ -177,7 +175,7 @@
     <section class="price">
       <div class="price__block">
         <div class="price__plan">
-          <h3 class="price__title">Pricing Plan</h3>
+          <h2 class="price__title">Pricing Plan</h2>
           <p class="price__subtitle">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Lorem ipsum dolor sit amet.
@@ -331,18 +329,20 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copyright">&commat; 2018 Copyright, All Rights Reserved by AppSon</p>
-      <ul class="footer__list">
-        <li class="footer__item"><a href="#" class="footer__link">Terms & Condition</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-        <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
-      </ul>
-      <ul class="footer__list-social">
-        <li class="footer__item-social"><a href="#" class="footer__social-link-fb"><img class="footer__social-icon" src="img/fb.svg" alt="social"></a></li>
-        <li class="footer__item-social"><a href="#" class="footer__social-link-twit"><img class="footer__social-icon" src="img/twit.svg" alt="social"></a></li>
-        <li class="footer__item-social"><a href="#" class="footer__social-link-you"><img class="footer__social-icon" src="img/Youtube.svg" alt="social"></a><li>
-      </ul>
-      <a href="#" class="footer__on-top"></a>
+      <div class="footer__box-bottom">
+        <p class="footer__copyright">&commat; 2018 Copyright, All Rights Reserved by AppSon</p>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Terms & Condition</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+        </ul>
+        <ul class="footer__list-social">
+          <li class="footer__item-social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="footer__item-social"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="footer__item-social"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <a href="#" class="footer__on-top"></a>
+      </div>
     </div>
   </footer>
   <script src="js/jquery.js"></script>

@@ -36,6 +36,8 @@
 
 .news__main-img {
   width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
+  border-radius: 5px;
 }
 .news__left-title {
   font-weight: 500;
@@ -57,6 +59,13 @@
   color: #0063dd;
   text-decoration: none;
   display: flex;
+  &:focus {
+    opacity: 0.5;
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
 }
 .news__right-box {
   display: flex;
@@ -72,6 +81,9 @@
   width: 100%;
   img {
     width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
+    border-radius: 5px;
   }
 }
 .news__text-box {
@@ -152,6 +164,7 @@
   .news__text-title {
     margin-bottom: 5px;
     text-align: center;
+    margin-top: 10px;
   }
   .news__text-subtitle {
     margin: 0;

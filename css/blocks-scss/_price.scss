@@ -46,10 +46,16 @@
   width: 166px;
   height: 50px;
   margin-bottom: pxInProc(46, 352);
+  font-family: inherit;
   @include transition-prop;
   &:hover {
     color: #0f7bff;
     background-color: white;
+  }
+  &:focus {
+    color: #0f7bff;
+    background-color: white;
+    opacity: 0.8;
   }
 }
 
@@ -68,6 +74,11 @@
   &:hover {
     color: white;
     background-color: #0f7bff;
+  }
+  &:focus {
+    color: white;
+    background-color: #0f7bff;
+    opacity: 0.8;
   }
 }
 
@@ -133,7 +144,7 @@
     margin-top: 50px;
   }
   .price__title {
-    margin: 0;
+    margin: 0 0 10px 0;
   }
   .price__subtitle {
     margin-bottom: 30px;

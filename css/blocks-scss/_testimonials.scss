@@ -36,7 +36,6 @@
   box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
   border-radius: 5px;
   position: relative;
-  // height: 215px;
   width: 362px !important;
 }
 
@@ -51,6 +50,12 @@
   border: 1.6px solid #0063dd !important;
   border-radius: 32px;
   margin-right: 8px;
+  &:focus {
+    opacity: 0.7;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .owl-dot.active {

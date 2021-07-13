@@ -88,12 +88,12 @@
   &:hover {
     opacity: 0.5;
   }
+  &:focus {
+    opacity: 0.5;
+    text-decoration: underline;
+  }
 }
 
-i {
-  font-weight: 400;
-  width: 100px;
-}
 .arrow__box {
   margin-left: 15px;
   width: 67px;

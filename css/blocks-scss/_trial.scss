@@ -22,11 +22,15 @@
   color: white;
   margin-top: pxInProc(156, 1920);
   margin-bottom: pxInProc(129, 1920);
+  font-family: inherit;
   @include transition-prop;
   img {
     margin-left: 13px;
   }
   &:hover {
+    opacity: 0.5;
+  }
+  &:focus {
     opacity: 0.5;
   }
 }
@@ -42,6 +46,18 @@
   font-size: 1.6rem;
   color: black;
 }
+
+@media screen and (min-width: 1920px) {
+  .trial__box {
+    margin-top: 133px;
+    margin-bottom: 113px;
+  }
+  .trial__button {
+    margin-top: 156px;
+    margin-bottom: 129px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .trial {
     padding: 0 15px;
@@ -52,6 +68,9 @@
   .trial__button {
     width: 200px;
     height: 40px;
+    img {
+      display: none;
+    }
   }
 }
 @media screen and (max-width: 500px) {
