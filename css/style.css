@@ -89,7 +89,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../../img/Wave.png);
+  background-image: url(../img/Wave.png);
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -1819,7 +1819,7 @@ body {
 }
 
 .footer__on-top {
-  background-image: url(../../img/ScrollUp.png);
+  background-image: url(../img/ScrollUp.png);
   background-size: contain;
   position: center;
   position: fixed;
