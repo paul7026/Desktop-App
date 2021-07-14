@@ -424,16 +424,16 @@ body {
 }
 
 @media screen and (max-width: 628px) {
-  .header__logo-title {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
   .header__button {
     width: 140px;
     height: 40px;
   }
   .header__devices {
     width: 245px;
+  }
+  .header__logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -1288,9 +1288,10 @@ body {
   }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 344px) {
   .testimonials__title {
     margin-left: 15px;
+    margin-right: 15px;
   }
   .owl-item {
     width: 300px !important;
@@ -1865,7 +1866,7 @@ body {
 
 @media screen and (max-width: 1610px) {
   .footer__on-top {
-    right: 0;
+    right: 10px;
     bottom: 50%;
   }
 }

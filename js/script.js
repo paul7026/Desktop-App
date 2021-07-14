@@ -11,7 +11,10 @@ $(document).ready(function () {
         items: 1,
         center: true,
       },
-      350: {},
+      350: {
+        center: true,
+      },
+      1032: {},
     },
   });
 });

@@ -23,6 +23,8 @@
 (function () {
   const scrollUp = document.querySelector(".footer__on-top");
   const header = document.querySelector(".header");
+  const scrolled = window.pageYOffset;
+  const coords = document.documentElement.clientHeight;
   scrollUp.addEventListener("click", () => {
     header.scrollIntoView({
       behavior: "smooth",

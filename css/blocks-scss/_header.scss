@@ -282,16 +282,16 @@
 }
 
 @media screen and (max-width: 628px) {
-  .header__logo-title {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
   .header__button {
     width: 140px;
     height: 40px;
   }
   .header__devices {
     width: 245px;
+  }
+  .header__logo {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
