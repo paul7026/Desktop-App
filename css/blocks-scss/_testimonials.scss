@@ -132,4 +132,10 @@
   .testimonials__title {
     margin-left: 15px;
   }
+  .owl-item {
+    width: 300px !important;
+    .testimonials__right-box {
+      justify-content: center;
+    }
+  }
 }

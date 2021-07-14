@@ -9,8 +9,9 @@ $(document).ready(function () {
       0: {
         margin: 10,
         items: 1,
+        center: true,
       },
-      900: {},
+      350: {},
     },
   });
 });

@@ -1292,6 +1292,14 @@ body {
   .testimonials__title {
     margin-left: 15px;
   }
+  .owl-item {
+    width: 300px !important;
+  }
+  .owl-item .testimonials__right-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .news {
@@ -1831,6 +1839,9 @@ body {
   width: 70px;
   height: 70px;
   display: block;
+  border: 2px solid grey;
+  border-radius: 50%;
+  z-index: 100;
   -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
 }
@@ -1849,18 +1860,6 @@ body {
   }
   .footer__block {
     margin-bottom: 119px;
-  }
-}
-
-@media screen and (max-width: 597px) {
-  .footer__block {
-    max-width: 370px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .footer__block {
-    max-width: 290px;
   }
 }
 
@@ -1911,6 +1910,18 @@ body {
         -ms-flex-order: 2;
             order: 2;
     margin: 0 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  .footer__block {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .footer__block {
+    max-width: 290px;
   }
 }
 

@@ -151,6 +151,9 @@
   width: 70px;
   height: 70px;
   display: block;
+  border: 2px solid grey;
+  border-radius: 50%;
+  z-index: 100;
   @include transition-prop;
   &:hover {
     opacity: 0.5;
@@ -166,18 +169,6 @@
   }
   .footer__block {
     margin-bottom: 119px;
-  }
-}
-
-@media screen and (max-width: 597px) {
-  .footer__block {
-    max-width: 370px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .footer__block {
-    max-width: 290px;
   }
 }
 
@@ -211,5 +202,17 @@
     width: 100%;
     order: 2;
     margin: 0 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 597px) {
+  .footer__block {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .footer__block {
+    max-width: 290px;
   }
 }
