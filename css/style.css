@@ -1830,21 +1830,23 @@ body {
 }
 
 .footer__on-top {
-  background-image: url(../img/ScrollUp.png);
-  background-size: contain;
-  position: center;
-  position: fixed;
-  right: 158px;
-  bottom: 27px;
   background-repeat: no-repeat;
   width: 70px;
   height: 70px;
   display: block;
-  border: 2px solid grey;
-  border-radius: 50%;
+  position: absolute;
+  right: 158px;
+  cursor: pointer;
   z-index: 100;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
+}
+
+.footer__on-top img {
+  width: 100%;
 }
 
 .footer__on-top:hover {
@@ -1864,10 +1866,24 @@ body {
   }
 }
 
+@media screen and (max-width: 1733px) {
+  .footer__on-top {
+    right: 20px;
+  }
+}
+
 @media screen and (max-width: 1610px) {
   .footer__on-top {
     right: 10px;
-    bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .footer__on-top {
+    display: none;
+  }
+  .footer__on-top img {
+    display: none;
   }
 }
 
